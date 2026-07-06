@@ -56,9 +56,9 @@ tr:hover td{background:#fafafa}
 .search-tags{display:flex;flex-wrap:wrap;gap:6px}
 .search-tag-with-trend{display:inline-flex;align-items:center;background:#f8f8f8;padding:4px 8px;border-radius:14px;margin:3px 4px 3px 0}
 
-.keyword-trends-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:6px;margin-top:12px}
-.keyword-trend-card{background:#fafafa;border-radius:6px;padding:6px 8px}
-.keyword-name{font-size:11px;font-weight:600;color:#333;margin-bottom:2px}
+.keyword-trends-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(80px,1fr));gap:8px;margin-top:12px}
+.keyword-trend-card{background:#fafafa;border-radius:6px;padding:8px;overflow:hidden;box-sizing:border-box}
+.keyword-name{font-size:11px;font-weight:600;color:#333;margin-bottom:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .search-tag{background:#f0f0f0;padding:3px 10px;border-radius:12px;font-size:12px;color:#555}
 
 .modal-overlay{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.5);z-index:1000;align-items:center;justify-content:center}
