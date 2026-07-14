@@ -69,12 +69,67 @@ tr:hover td{background:#fafafa}
 
 .footer{text-align:center;padding:32px;color:#ccc;font-size:12px}
 
-@media(max-width:900px){
-  .scene-grid{grid-template-columns:repeat(2,1fr)}
-  .search-grid{grid-template-columns:1fr}
-  .kpi-row{grid-template-columns:repeat(2,1fr)}
-  .store-grid{grid-template-columns:1fr}
+
+
+
+
+
+
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.calendar-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.calendar-table thead {
+  background: linear-gradient(135deg, #D32F2F 0%, #FF6B6B 100%);
+  color: #fff;
+}
+.calendar-table th {
+  padding: 12px 16px;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 600;
+}
+.calendar-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 13px;
+  line-height: 1.8;
+  vertical-align: top;
+}
+.calendar-table tbody tr:hover {
+  background: #fafafa;
+}
+.calendar-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
 </style>
 </head>
 <body>
@@ -171,7 +226,8 @@ tr:hover td{background:#fafafa}
   <button class="tab-btn" onclick="switchTab('tab-mz')">30天热销·滋补</button>
   <button class="tab-btn" onclick="switchTab('tab-potential')">30天潜力爆品</button>
   <button class="tab-btn" onclick="switchTab('tab-stores')">可做专场店铺</button>
-  <button class="tab-btn" onclick="switchTab('tab-all-shops')">全量K播店铺</button>
+<button class="tab-btn" onclick="switchTab('tab-calendar')">📅 中式滋补节令日历</button>
+<button class="tab-btn" onclick="switchTab('tab-all-shops')">全量K播店铺</button>
 </div>
 
 <div class="tab-content active" id="tab-yx">
@@ -608,6 +664,97 @@ tr:hover td{background:#fafafa}
 <tr><td>45</td><td><a href="https://www.xiaohongshu.com/shop/67c023014db75a00155641e3" target="_blank" class="prod-link">制乐厂旗舰店</a></td><td><span class="scene-tag" style="background:#9C27B020;color:#9C27B0;border:1px solid #9C27B040;border-radius:10px;padding:1px 8px;font-size:11px;white-space:nowrap">酒</span></td></tr>
   </tbody></table></div>
 </div>
+
+<div class="tab-content" id="tab-calendar">
+  <div class="section-title">📅 中式滋补·节令营销日历（2026）</div>
+  
+<table class="calendar-table">
+  <thead>
+    <tr>
+      <th>月份</th>
+      <th>季节养生主轴</th>
+      <th>货盘举例</th>
+      <th>溯源城市/产业带</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+    <tr>
+      <td style="font-weight:600;color:#D32F2F;">1月</td>
+      <td style="color:#666;">冬·养肾防寒</td>
+      <td>长白山野山参粉<br/>九蒸九晒黄精果<br/>陈皮普洱老茶头<br/>月子滋补调理膏方<br/>新疆草原黑蜂蜜</td>
+      <td>吉林白山(野山参·秋挖存库)<br/>安徽九华山(黄精·秋收存库)<br/>广东新会(陈皮)<br/>江浙中医工坊(膏方·冬令开方季)<br/>新疆伊犁(蜂蜜·存库)</td>
+    </tr>
+    <tr>
+      <td style="font-weight:600;color:#D32F2F;">2月</td>
+      <td style="color:#666;">冬·养肾迎春</td>
+      <td>鲜炖燕窝礼盒<br/>印尼溯源干燕窝礼盒<br/>长白山野山参礼盒<br/>广东鱼胶（花胶）礼盒<br/>西藏高原藏红花礼盒</td>
+      <td><br/>吉林长白山(野山参·存库)<br/>广东珠三角(花胶·全年)<br/>西藏林芝/克什米尔(藏红花·存库)</td>
+    </tr>
+    <tr>
+      <td style="font-weight:600;color:#D32F2F;">3月</td>
+      <td style="color:#666;">早春·疏肝</td>
+      <td>鲜炖燕窝<br/>南海即食花胶<br/>阿胶肽红参饮<br/>玫瑰洛神花养颜茶<br/>春季气血调理膏方</td>
+      <td><br/>广东九龙江三角洲(花胶·全年)<br/>山东东阿(阿胶·存库)<br/>云南大理(玫瑰·3-5月当季)<br/>江浙(膏方·春令定制)</td>
+    </tr>
+    <tr>
+      <td style="font-weight:600;color:#D32F2F;">4月</td>
+      <td style="color:#666;">春·健脾祛湿</td>
+      <td>云南紫皮石斛原浆<br/>宁夏枸杞原浆<br/>党参黄芪五宝养气茶<br/>四川青川深山春蜜<br/>南海即食花胶</td>
+      <td>云南霍山/勐腊(紫皮石斛·春茬当季)<br/>宁夏中宁(枸杞·存库·7月新货前)<br/>四川青川(蜂蜜·春蜜当季)<br/>广东珠三角(花胶·全年)</td>
+    </tr>
+    <tr>
+      <td style="font-weight:600;color:#D32F2F;">5月</td>
+      <td style="color:#666;">初夏·养心补母</td>
+      <td>鲜炖燕窝小鲜瓶<br/>南海花胶即食小包<br/>云南铁皮石斛原浆<br/>蜂王浆冻干粉<br/>桃胶雪燕银耳羹</td>
+      <td><br/>广东珠三角(花胶·全年)<br/>云南(石斛·春茬末期)<br/>东北/华北(蜂王浆·5-8月采集季)<br/>云贵山区(桃胶·夏初)</td>
+    </tr>
+    <tr>
+      <td style="font-weight:600;color:#D32F2F;">6月</td>
+      <td style="color:#666;">夏·清热祛湿</td>
+      <td>大连底播深海海参<br/>长白山野山参粉<br/>广东蜂胶软胶囊<br/>南海鱼胶礼盒<br/>三伏前置祛湿茶</td>
+      <td>大连獐子岛(海参·春捞存库·6月底休渔)<br/>吉林长白山(野山参·存库)<br/>广东/福建(蜂胶·全年)<br/>广东珠三角(花胶·全年)<br/>华南产区(祛湿茶原料·采制季)</td>
+    </tr>
+    <tr>
+      <td style="font-weight:600;color:#D32F2F;">7月</td>
+      <td style="color:#666;">盛夏·三伏养生</td>
+      <td>广西梧州龟苓膏<br/>薏苡仁茯苓五指毛桃膏<br/>新疆伊犁黑蜂蜜<br/>桃胶雪燕银耳羹<br/>竹蔗茅根雪梨润肺茶</td>
+      <td>广西梧州(龟苓膏·全年)<br/>安徽(薏苡仁/茯苓·存库)<br/>广东(五指毛桃·全年)<br/>新疆伊犁(黑蜂蜜·7-9月出蜜高峰)<br/>云贵山区(桃胶·夏采当季)</td>
+    </tr>
+    <tr>
+      <td style="font-weight:600;color:#D32F2F;">8月</td>
+      <td style="color:#666;">夏秋交替·润肺</td>
+      <td>鲜炖燕窝<br/>南海即食花胶礼盒<br/>新疆若羌阿胶黑糖膏<br/>洛神玫瑰养颜茶<br/>福建古田银耳羹</td>
+      <td><br/>广东九龙江三角洲(花胶·全年)<br/>山东东阿/新疆(阿胶黑糖膏·全年)<br/>云南大理(玫瑰·存库)<br/>福建古田(银耳·全年大棚)</td>
+    </tr>
+    <tr>
+      <td style="font-weight:600;color:#D32F2F;">9月</td>
+      <td style="color:#666;">秋·润燥养肺</td>
+      <td>鲜炖燕窝礼盒<br/>印尼溯源燕窝礼盒<br/>山东秋梨膏<br/>百合莲子安神茶<br/>长白山野山参粉</td>
+      <td><br/>山东蒙阴/莱芜(秋梨膏·秋梨9月当季)<br/>福建莆田(百合莲子·秋收)<br/>吉林长白山(野山参·秋挖当季)</td>
+    </tr>
+    <tr>
+      <td style="font-weight:600;color:#D32F2F;">10月</td>
+      <td style="color:#666;">深秋·滋阴+国庆囤货</td>
+      <td>长白山野山参粉<br/>吉林高丽红参整参<br/>云南紫皮石斛原浆<br/>安徽九华山黄精<br/>酸枣仁合欢安神茶</td>
+      <td>吉林白山(野山参·秋挖当季)<br/>吉林通化(高丽红参·秋挖当季)<br/>云南霍山(石斛·秋茬当季)<br/>安徽九华山(黄精·秋收当季)<br/>陕西(酸枣仁·秋收当季)</td>
+    </tr>
+    <tr>
+      <td style="font-weight:600;color:#D32F2F;">11月</td>
+      <td style="color:#666;">冬·补冬藏精</td>
+      <td>鲜炖燕窝年套<br/>长白山野山参粉<br/>冬令膏方（预售开方）<br/>西藏那曲野生冬虫夏草<br/>福建龙岩赤灵芝孢子粉</td>
+      <td>印尼马来西亚(燕窝·全年)<br/>吉林白山(野山参·新货入库)<br/>江浙中医工坊(冬令膏方·开方旺季)<br/>福建龙岩(灵芝孢子粉·存库)</td>
+    </tr>
+    <tr>
+      <td style="font-weight:600;color:#D32F2F;">12月</td>
+      <td style="color:#666;">冬·温阳固本</td>
+      <td>印尼溯源燕窝礼盒<br/>长白山野山参礼盒<br/>冬令膏方礼盒装<br/>鹿茸片（东北梅花鹿）<br/>九华山黄精果礼盒</td>
+      <td><br/>吉林长白山(野山参·存库)<br/>江浙中医工坊(冬令膏方·旺季尾声)<br/>东北(鹿茸·梅花鹿·秋茸存库)<br/>安徽九华山(黄精·存库)</td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
 <div class="tab-content" id="tab-all-shops">
   <div class="tab-header"><h3>🏬 全量K播店铺</h3><span style="color:#999;font-size:13px">休食滋补KA行业全量可做k播商家清单</span></div>
   <div class="store-grid">
@@ -888,6 +1035,34 @@ function closeModal() {
 document.getElementById('sceneModal').addEventListener('click', function(e) {
   if (e.target === this) closeModal();
 });
+
+// 中式滋补日历交互函数
+function showMonthDetail(monthIndex) {
+  // 隐藏所有详情页
+  for (let i = 0; i < 12; i++) {
+    const detail = document.getElementById('month-detail-' + i);
+    if (detail) detail.style.display = 'none';
+  }
+  
+  // 显示选中的月份详情
+  const target = document.getElementById('month-detail-' + monthIndex);
+  if (target) {
+    target.style.display = 'block';
+    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+}
+
+function hideMonthDetail() {
+  // 隐藏所有详情页
+  for (let i = 0; i < 12; i++) {
+    const detail = document.getElementById('month-detail-' + i);
+    if (detail) detail.style.display = 'none';
+  }
+  
+  // 滚动到顶部
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
 </script>
 </body>
 </html>
